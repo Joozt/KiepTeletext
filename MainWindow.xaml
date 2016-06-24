@@ -1,0 +1,16 @@
+﻿<Window x:Class="KiepTeletext.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="KiepTeletext" Height="300" Width="300" WindowStartupLocation="CenterScreen" WindowStyle="None" FontFamily="Arial" FontWeight="Bold" Background="Black" Foreground="White" WindowState="Maximized" MouseDown="MouseDownHandler" MouseUp="Window_MouseUp" Icon="Icon.ico">
+    
+    <Grid>
+
+            <Border Name="border" ClipToBounds="True">
+                <Image Name="imgTeletext" />
+            </Border>
+        
+        <Image Margin="20" Name="imgStatus" Stretch="None" Source="Sync.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" StretchDirection="DownOnly" />
+        <TextBox Margin="20" Name="tbPageSelection" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="200" Background="Black" BorderThickness="0" Foreground="White" />
+    </Grid>
+    
+</Window>
